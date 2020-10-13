@@ -1,9 +1,9 @@
 
-# Based on wiorca/docker-windscribe
-FROM wiorca/docker-windscribe:latest
+# Based on wiorca/docker-windscribe-mono
+FROM wiorca/docker-windscribe-mono:latest
 
 # Version
-ARG VERSION=0.0.3
+ARG VERSION=0.0.4
 
 # Expose the webadmin port for Lidarr
 EXPOSE 8686/tcp
@@ -12,7 +12,7 @@ EXPOSE 8686/tcp
 VOLUME [ "/data", "/music" ]
 
 # Install mono
-RUN apt -y update && apt install -y mediainfo curl libchromaprint-tools && \
+RUN apt -y update && apt install -y mediainfo libchromaprint-tools && \
     apt -y autoremove && apt -y clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # Add in scripts for health check and start-up
