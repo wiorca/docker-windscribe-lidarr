@@ -2,7 +2,7 @@
 
 # Check to make sure Lidarr is running
 
-QBTNX=$(pgrep mono | wc -l )
+QBTNX=$(pgrep Lidarr | wc -l )
 if [[ ${QBTNX} -ne 1 ]]
 then
 	echo "Lidarr process not running"

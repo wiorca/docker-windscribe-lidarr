@@ -2,5 +2,5 @@
 
 echo "Starting Lidarr Service"
 
-mono /opt/Lidarr/Lidarr.exe
+/opt/Lidarr/Lidarr
 
