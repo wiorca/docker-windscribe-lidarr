@@ -4,6 +4,12 @@ A derivative of wiorca/docker-windscribe that provides Lidarr services.
 
 NOTE: You will need to provide the configuration of Lidarr.  I do not provide a default configuration that points to /movies or /data.  It will make your life easier if the paths inside your torrent client (/data) lines up with your radarr image.  I provide /data for torrents/downloads, and /music for the library.  If you need to add/modify, then feel free to do so to your hearts content.
 
+## Deprecated
+
+I do plan to keep updating this, but I would recommend using other images with the base docker-windscribe client instead.  You can then use the network of the windscribe container.
+
+--net=container:[docker-windscribe-continer-name]
+
 ## About the image
 
 Windscribe docker container that provides Radarr services.  It's a minimalst image that provides very little configuration out of the box.

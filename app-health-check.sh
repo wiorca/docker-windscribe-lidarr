@@ -12,4 +12,3 @@ fi
 echo "Lidarr is running"
 
 exit 0
-
